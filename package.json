@@ -1,6 +1,6 @@
 {
-	"name": "ts-webpack-boilerplate",
-	"displayName": "TS-Webpack-Boilerplate",
+	"name": "telegram-bot-boilerplate",
+	"displayName": "Telegram Bot Boilerplate",
 	"version": "1.0.0",
 	"private": false,
 	"main": "./dist/main.js",
@@ -23,11 +23,17 @@
 		"Development",
 		"Production",
 		"JavaScript",
-		"Build"
+		"Build",
+		"Telegram",
+		"Bot"
 	],
 	"author": "Nikder Teams <info@nikder.com>",
 	"license": "MIT",
-	"description": "Node.js Boilerplate with TypeScript and Webpack setup",
+	"description": "Node.js Telegram Bot Boilerplate with grammY lib and TypeScript, Webpack support",
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"grammy": "^1.30.0"
+	},
 	"devDependencies": {
 		"concurrently": "^9.0.1",
 		"nodemon": "^3.1.7",

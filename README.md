@@ -1,15 +1,17 @@
-# Node.js Boilerplate with TypeScript and Webpack
+# Node.js Telegram Bot Boilerplate with grammY lib and TypeScript, Webpack support
 
 ## Опис
 
-Цей проект демонструє налаштування Node.js додатку з використанням TypeScript і Webpack.
+Цей проект демонструє налаштування Telegram бота на Node.js з використанням бібліотеки grammY і підтримкою TypeScript і Webpack.
 Проєкт включає налаштування для автоматичної компіляції у development режимі та збірки для production.
 
 ## Структура проекту
 
 ```plaintext
-ts-webpack-boilerplate
+telegram-bot-boilerplate
 ├── src
+│   ├── bot.ts
+│   ├── config.ts
 │   └── index.ts
 ├── .gitignore
 ├── .prettierignore
@@ -26,14 +28,28 @@ ts-webpack-boilerplate
 ### 1. Клонувати репозиторій:
 
 ```bash
-git clone https://github.com/yourusername/my-node-project.git
-cd my-node-project
+git clone https://github.com/nikder-com/telegram-bot-boilerplate.git
+cd telegram-bot-boilerplate
 ```
 
 ### 2. Встановити залежності:
 
 ```bash
 npm install
+```
+
+### 3. Отримання Bot Token:
+
+Створити нового бота та отримати його Token через BotFather в Telegram:
+[BotFather](https://t.me/BotFather)
+
+### 3. Додати Bot Token в файл .env:
+
+Створити файл у корневій папкі проєкту .env
+
+```plaintext
+// .env
+TELEGRAM_BOT_TOKEN=YOU_TELEGRAM_BOT_TOKEN
 ```
 
 ## Запуск
@@ -70,4 +86,4 @@ npm run format
 
 ## Додатково
 
-Для будь-яких змін у конфігурації, будь ласка, звертайся до документації Webpack та TypeScript.
+Для будь-яких змін у конфігурації та налаштуваннях бота, будь ласка, звертайся до документації бібліотеки grammY, Webpack та TypeScript.

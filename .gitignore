@@ -3,3 +3,6 @@ node_modules/
 
 # Webpack Output
 dist/
+
+# Env File
+.env
